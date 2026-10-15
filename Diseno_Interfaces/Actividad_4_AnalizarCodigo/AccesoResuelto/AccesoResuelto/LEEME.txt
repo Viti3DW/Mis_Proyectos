@@ -1,0 +1,15 @@
+PROYECTO ACCESO - UT1 · Actividad 4
+Módulo 0488 · Desarrollo de Interfaces · Curso 2026-2027
+
+CÓMO IMPORTARLO EN ECLIPSE
+1. File > Import... > General > Existing Projects into Workspace > Next.
+2. Marca "Select archive file", pulsa Browse y elige Acceso.zip.
+3. Comprueba que aparece marcado el proyecto "Acceso" y pulsa Finish.
+
+CÓMO ABRIR LA VENTANA EN WINDOWBUILDER
+Clic derecho sobre src/acceso/Acceso.java > Open With > WindowBuilder Editor.
+(Si lo abres con doble clic se abre el editor de texto normal, sin pestaña Design.)
+
+ANTES DE TOCAR NADA
+Haz la captura de la pestaña Source "antes". Si renombras primero,
+ya no podrás hacerla.

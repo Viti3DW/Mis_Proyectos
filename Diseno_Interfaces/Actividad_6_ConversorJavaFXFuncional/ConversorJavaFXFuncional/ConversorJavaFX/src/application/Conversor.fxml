@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:controller="application.ConversorController" prefHeight="350.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" text="Binario" onAction="#mostrarBinario"/>
+            <Button mnemonicParsing="false" text="Hexadecimal" onAction="#mostrarHexa"/>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <VBox fx:id="panelBinario" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" StackPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblConversorBinario" text="Conversor Decimal a Binario">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtDecimalBinario" alignment="CENTER" maxWidth="250.0" prefHeight="32.0" prefWidth="200.0" promptText="Introduce un numero decimal"  onAction="#convertirBinario"/>
+                  <Button fx:id="btnConvertirBinario" alignment="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" text="Convertir" onAction="#convertirBinario">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblResultadoBinario" text="Resultado: " textFill="#e00202">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="panelHexa" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0" visible="false" StackPane.alignment="CENTER">
+               <children>
+                  <Label text="Conversor Decimal a Hexadecimal">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtDecimalHexa" alignment="CENTER" maxWidth="250.0" prefWidth="200.0" promptText="Introduce un numero decimal" onAction="#convertirHexa"/>
+                  <Button fx:id="btnConvertirHexa" alignment="CENTER" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" text="Convertir" onAction="#convertirHexa">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblResultadoHexa" text="Resultado: " textFill="#e00202">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
