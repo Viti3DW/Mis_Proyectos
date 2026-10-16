@@ -1,0 +1,15 @@
+# Compilación y binarios de Maven
+target/
+*.class
+
+# Entornos de desarrollo (IDE)
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
